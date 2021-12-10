@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College List </title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    }
+    @media screen 
+        and (min-width: 1024px)
+        and (max-device-width: 3000px)
+        /* and (min-device-height: 4000px) */
+        and (-webkit-min-device-pixel-ratio: 1) 
+        { 
+    .data{
+        /* border: 0.5px solid green; */
+        display: block;
+        width: 100%;
+        height: 100vh;
+        margin-left:auto;
+	    margin-right:auto;
+        
+    }
+    .header1{
+        display: flex;
+    }
+    .navbar{
+        border: 0.3px solid skyblue;
+        background-color: rgba(128, 167, 211, 0.801);
+        position: absolute;
+        width: 97.85%;
+        padding: 10px 1%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .logo{
+        width: 100px;
+        border-radius: 10px;
+    }
+    .navbar ul{
+        /* border: 2px solid green; */
+        padding-right: 3%;
+        position: absolute;
+        right: 0%;
+    }
+    .navbar ul li{
+        border: 2px solid black;
+        border-color: black;
+        border-radius: 10px;
+        /* margin-left: 60%; */
+        list-style: none;
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 28px;
+        text-decoration: none;
+        background-color: lightblue;
+        opacity: 0.75;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: maroon;
+    }
+    .navbar ul li:hover{
+        opacity: 0.9;
+    }
+    .navbar ul li a:hover, .navbar li a::after{
+        width: 100%;
+        text-decoration: underline;
+        color: blue;
+        transition: 0.5s;
+    }
+    .content{
+        position: absolute;
+        display: inline-flex;
+        border: 1px solid red;
+
+    }
+    .names{
+        text-align: center;
+    }
+    }
+    @media screen and (min-width: 90px) and (max-width: 1024px) 
+    and (min-device-height: 450px) and (max-device-height: 1366px)  
+    and (orientation: portrait) 
+    {
+    .navbar{
+        border: 0.3px solid skyblue;
+        background-color: rgba(128, 167, 211, 0.801);
+        position: absolute;
+        width: 97.85%;
+        padding: 10px 1%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .logo{
+        width: 80px;
+        border-radius: 10px;
+    }
+    .navbar ul{
+        /* border: 2px solid green; */
+        width: 500px;
+        padding-right: 2%;
+        position: absolute;
+        right: 0%;
+        text-align: center;
+        
+    }
+    .navbar ul li{
+        border: 2px solid black;
+        border-radius: 10px;
+        margin: 3px;
+        margin-left: 70%;
+        list-style: none;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+        text-decoration: none;
+        background-color: lightblue;
+        opacity: 0.75;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: maroon;
+    }
+    .navbar ul li:hover{
+        opacity: 0.9;
+    }
+    .navbar ul li a:hover, .navbar li a::after{
+        width: 100%;
+        text-decoration: underline;
+        color: blue;
+        transition: 0.5s;
+    }
+    }
+    @media (min-width: 500px) and (max-width: 1024px) and (min-device-height: 200px) 
+        and (max-device-height: 811px)  and (orientation: landscape) 
+        {
+    .navbar{
+        border: 0.3px solid skyblue;
+        background-color: rgba(128, 167, 211, 0.801);
+        position: absolute;
+        width: 97.85%;
+        padding: 10px 1%;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+    }
+    .logo{
+        width: 80px;
+        border-radius: 10px;
+    }
+    .navbar ul{
+        /* border: 2px solid green; */
+        padding-right: 3%;
+        position: absolute;
+        right: 0%;
+    }
+    .navbar ul li{
+        border: 2px solid black;
+        border-color: black;
+        border-radius: 10px;
+        /* margin-left: 60%; */
+        list-style: none;
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 22px;
+        text-decoration: none;
+        background-color: lightblue;
+        opacity: 0.75;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: maroon;
+    }
+    .navbar ul li:hover{
+        opacity: 0.9;
+    }
+    .navbar ul li a:hover, .navbar li a::after{
+        width: 100%;
+        text-decoration: underline;
+        color: blue;
+        transition: 0.5s;
+    }
+    }
+
+
+</style>
+    
+</head>
+<body>
+    <div class="data">
+        <header class="header1">
+            <div class="navbar">
+                <img src="logo.jpg" class="logo" usemap="#workmap">
+                <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="mailto: vishwajeetkadam14@gmail.com">                </map>
+                <ul>
+                <li><a href="index2.html"><b> 🏠 Home</a></li>
+                <li><a href="#">📞 Contact us</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <ul>
+            <a href="#"> <h1>Karmveer Bhaurao Patil College of Engineering Satara</h1></a>
+            </ul>
+        </div>
+
+    </div>
+   
+    
+    
+</body>
+</html>
