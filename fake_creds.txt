@@ -1,0 +1,4 @@
+access key = AKIAIOSFODNN7EXAMPLE
+secret access key = bPxRfiCYEXAMPLEKEY
+
+"RSA private key": "-----BEGIN EC PRIVATE KEY-----"
